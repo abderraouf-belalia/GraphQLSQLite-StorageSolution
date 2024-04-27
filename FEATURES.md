@@ -1,0 +1,4 @@
+- [x] Create a new book. `createBook`
+- [x] Read a book. `readBook`
+- [x] Update a book. `updateBook`
+- [x] Delete a book. `deleteBook`

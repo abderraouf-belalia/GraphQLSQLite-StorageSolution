@@ -1,0 +1,26 @@
+type Error {
+  name: String!
+  message: String!
+}
+
+type Book {
+  id: ID!
+  title: String!
+  author: String!
+}
+
+type BookResult {
+  book: Book
+  success: Boolean
+  error: Error
+}
+
+type Query {
+  readBook(id: ID!): BookResult
+}
+
+type Mutation {
+  createBook(id: ID!, title: String!, author: String!): BookResult
+  updateBook(id: ID!, title: String, author: String): BookResult
+  deleteBook(id: ID!): BookResult
+}
